@@ -11,28 +11,116 @@ class ProductScreen extends StatelessWidget {
       name: "عصارة",
       description: "عصارة مليح",
       price: 800,
-      imageUrl: "images/squeezer.png"
+      imageUrl: "assets/images/squeezer.png"
     ),
     Product(
       id: "2",
       name: "هاتف",
       description: "هاتف ضد الماء",
       price: 300,
-      imageUrl: "images/phone.png"
+      imageUrl: "assets/images/phone.png"
     ),
     Product(
       id: "3",
       name: "سماعة",
       description: "سماعة قوي",
       price: 400,
-      imageUrl: "images/airphone.png"
+      imageUrl: "assets/images/airphone.png"
     ),
     Product(
       id: "4",
       name: "شاحن",
       description: "شاحن سريع",
       price: 400,
-      imageUrl: "images/charger.png"
+      imageUrl: "assets/images/charger.png"
+    ),
+   
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+  
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
+    ),
+    
+    Product(
+      id: "4",
+      name: "شاحن",
+      description: "شاحن سريع",
+      price: 400,
+      imageUrl: "assets/images/charger.png"
     ),
   ];
   @override
