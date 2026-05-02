@@ -13,6 +13,7 @@ A few resources to get you started if this is your first Flutter project:
 ![product screenshot](assets/imageApp/image1.jpg)
 ![details screenshot](assets/imageApp/image2.jpg)
 ![back to product screen screenshot](assets/imageApp/image3.jpg)
+![back to product screen screenshot](assets/images/phone.png)
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
