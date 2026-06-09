@@ -1,19 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:assignment2/productScreen.dart';
-void main() {
-  runApp(const MyApp());
+import 'package:provider/provider.dart';
+import 'package:assignment2/provider/card_provider.dart';
+import 'package:assignment2/provider/fsvorite_provider.dart';
+import 'package:assignment2/screens/home_screen.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  final favoriteProvider = FavoriteProvider();
+  await favoriteProvider.loadFavorites();
+
+  runApp(MyApp(favoriteProvider: favoriteProvider));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final FavoriteProvider favoriteProvider;
 
-  // This widget is the root of your application.
+  const MyApp({super.key, required this.favoriteProvider});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
-      debugShowCheckedModeBanner: false,
-      home: ProductScreen(),
-    );   
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CartProvider()),
+        ChangeNotifierProvider<FavoriteProvider>(
+            create: (_) => favoriteProvider),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: const HomeScreen(),
+      ),
+    );
   }
 }
