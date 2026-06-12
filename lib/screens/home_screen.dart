@@ -3,6 +3,7 @@ import 'package:assignment2/screens/departments_screen.dart';
 import 'package:assignment2/screens/favorites_screen.dart';
 import 'package:assignment2/screens/cart_screen.dart';
 
+// removed unused imports: login, register
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -39,18 +40,18 @@ class _HomeScreenState extends State<HomeScreen> {
         child: _screens[_selectedIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.category),
-            label: 'الأقسام',
+            label: _titles[0],
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            label: 'المفضلات',
+            label: _titles[1],
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart),
-            label: 'السلة',
+            label: _titles[2],
           ),
         ],
         currentIndex: _selectedIndex,
